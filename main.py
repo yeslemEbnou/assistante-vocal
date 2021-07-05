@@ -15,4 +15,4 @@ def reception_envoie():
 
 
 if __name__ == '__main__':
-    app.run(debug=False, host= "0.0.0.0", port=5630)
+    app.run(debug=False, host= "0.0.0.0")
