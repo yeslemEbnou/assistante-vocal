@@ -7,6 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     return "<h1>Assitante vocal page d'accueil<h2/>"
+    # return jsonify({'result': func.hsaniya_google_to_hasniya_general('مش حالك', words=words.words)})
 
 @app.route('/assistant_logiciel/api/translate_text_to_hasaniya', methods=['POST'])
 def reception_envoie():
@@ -15,4 +16,4 @@ def reception_envoie():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host="0.0.0.0")
